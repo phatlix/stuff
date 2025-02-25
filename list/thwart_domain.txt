@@ -1,15 +1,15 @@
 [Adblock Plus]
-! Version: 2025022505
+! Version: 2025022506
 ! Title: Thwart (school time)
 ! Description: Make it hard to not comply.
 ! Syntax: ABP Style
 ! Entries: 168
 ! Last modified: 2025-02-25T13:00:00+0000
-! Expires: No
+! Expires: 1 hours
 ! License: None yet.
 ! Maintainer: Phatlix
 ! Homepage: https://github.com/phatlix
-! Contact: no-reply@github.com
+! Contact: phatlix@thwart.lan
 
 !STEAM
 ||steam.com^
