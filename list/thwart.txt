@@ -1,11 +1,11 @@
-# Version: 2025022501
-# Title: Home Thwart
+# Version: 2025022502
+# Title: Thwart (school time)
 # Description: Make it hard to not comply.
 # Syntax: Regex
 # Entries: 162
 # Last modified: 2025-02-25T13:00:00+0000
 # Expires: No
-# License: https://github.com/phatlix/xxxxxx
+# License: None yet.
 # Maintainer: Phatlix
 # Homepage: https://github.com/phatlix
 # Contact: no-reply@github.com
@@ -188,4 +188,5 @@
 /^(.*\.)?douyincdn\.com$/
 /^(.*\.)?douyinpic\.com$/
 /^(.*\.)?douyinstatic\.com$/
+
 /^(.*\.)?douyinvod\.com$/
