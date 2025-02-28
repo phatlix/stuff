@@ -179,6 +179,7 @@ cat > /etc/wireguard/wg0.conf << EOF
 PrivateKey = ${PKEY}
 ListenPort = ${LISTEN_PORT}
 Address = ${CLIENT_WG_IP}
+DNS = ${DNS_INFO}
 
 [Peer]
 PublicKey = ${SERVER_PUBLIC_KEY}
