@@ -97,8 +97,6 @@ WGPATH="/etc/wireguard"
 SRVINT=$(ip route show to default | grep -Eo "dev\s*[[:alnum:]]+" | sed 's/dev\s//g');
 SRVNET=$(ipcalc ${SRVIP} | awk '/Network:/ {print $2}');
 SRVNETIP=$(ipcalc ${SRVIP} | awk '/Address:/ {print $2}');
-PKEY=$(cat ${WGPATH}/${INTNM});
-SKEY=$(cat ${WGPATH}/${INTNM}.pub);
 
 if [[ "$INSTWG" == "y" || "$INSTWG" == "Y" ]]; then
   printf "${BLU}Updating system and installing wireguard.\n\
@@ -113,6 +111,9 @@ mkdir -p ${WGPATH}/helper
 touch ${WGPATH}/${INTNM} && chmod 600 ${WGPATH}/${INTNM}
 wg genkey > ${WGPATH}/${INTNM}
 cat ${WGPATH}/${INTNM} | wg pubkey > ${WGPATH}/${INTNM}.pub
+
+PKEY=$(cat ${WGPATH}/${INTNM});
+SKEY=$(cat ${WGPATH}/${INTNM}.pub);
 
 if [[ "$SERVCLNT" == "c" || "$SERVCLNT" == "C" ]]; then
 cat > ${WGPATH}/${INTNM}.conf << EOF
