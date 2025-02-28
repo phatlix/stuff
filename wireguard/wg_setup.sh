@@ -28,7 +28,7 @@ NON="\e[0m"    # Reset
 
 printf "${BLU}Updating system and installing wireguard.\n\
 ${GRY}This might take a hot second...${NON}\n"
-dnf install elrepo-release epel-release kernel-headers dkms -y -q
+dnf install elrepo-release epel-release -y -q
 dnf upgrade -y -q
 dnf install kmod-wireguard wireguard-tools -y -q
 dnf update -y -q
@@ -159,7 +159,7 @@ NON="\e[0m"    # Reset
 
 printf "${BLU}Updating system and installing wireguard.\n\
 ${GRY}This might take a hot second...${NON}\n"
-dnf install elrepo-release epel-release kernel-headers dkms -y -q
+dnf install elrepo-release epel-release -y -q
 dnf upgrade -y -q
 dnf install kmod-wireguard wireguard-tools -y -q
 dnf update -y -q
